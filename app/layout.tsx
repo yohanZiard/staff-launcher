@@ -1,5 +1,4 @@
 import Providers from "./providers"
-import { GoogleOAuthProvider } from "@react-oauth/google"
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
