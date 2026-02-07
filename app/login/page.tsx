@@ -1,11 +1,33 @@
 "use client"
 
-import { GoogleLogin } from "@react-oauth/google"
-import { USERS } from "../lib/auth"
+import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { USERS } from "../lib/auth"
 
 export default function LoginPage() {
   const router = useRouter()
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
+
+  const PASSWORD = "staff123" // shared password
+
+  function handleLogin() {
+    setError("")
+
+    const user = USERS[email as keyof typeof USERS]
+
+    if (!user || password !== PASSWORD) {
+      setError("Access not permitted")
+      return
+    }
+
+    localStorage.setItem("email", email)
+    localStorage.setItem("role", user.role)
+
+    router.push("/dashboard")
+  }
 
   return (
     <div
@@ -18,32 +40,31 @@ export default function LoginPage() {
         gap: 16,
       }}
     >
-      <img
-        src="/logo.png"
-        alt="Company Logo"
-        style={{ width: 120 }}
-      />
+      <img src="/logo.png" alt="Company Logo" style={{ width: 120 }} />
 
       <h2>Staff Access</h2>
 
-      <GoogleLogin
-        onSuccess={(cred) => {
-          const jwt = JSON.parse(atob(cred.credential!.split(".")[1]))
-          const email = jwt.email as keyof typeof USERS
-
-          if (!USERS[email]) {
-            alert("Access not permitted")
-            return
-          }
-
-          localStorage.setItem("email", email)
-          localStorage.setItem("role", USERS[email].role)
-          router.push("/dashboard")
-        }}
-        onError={() => {
-          alert("Login failed")
-        }}
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        style={{ padding: 8, width: 220 }}
       />
+
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        style={{ padding: 8, width: 220 }}
+      />
+
+      <button onClick={handleLogin} style={{ padding: "8px 16px" }}>
+        Login
+      </button>
+
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   )
 }
