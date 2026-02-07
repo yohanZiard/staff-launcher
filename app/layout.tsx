@@ -38,11 +38,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Staff" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
-<body>
-<GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!}>
-  {children}
-</GoogleOAuthProvider>
-</body>
+
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
-  );
+  )
 }
