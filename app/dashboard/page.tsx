@@ -37,9 +37,11 @@ export default function DashboardPage() {
   const router = useRouter()
 
   useEffect(() => {
-    const role = localStorage.getItem("role")
-    if (!role) router.push("/login")
-  }, [])
+ const LOGIN_DISABLED = true
+
+if (!LOGIN_DISABLED && !localStorage.getItem("email")) {
+  router.push("/login")
+}, [])
 
   const role =
     typeof window !== "undefined" ? localStorage.getItem("role") : null
