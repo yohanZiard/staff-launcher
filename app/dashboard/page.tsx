@@ -37,9 +37,7 @@ export default function DashboardPage() {
   const router = useRouter()
 
   useEffect(() => {
- const LOGIN_DISABLED = true
-
-if (!LOGIN_DISABLED && !localStorage.getItem("email")) {
+if (!localStorage.getItem("email")) {
   router.push("/login")
 }, [])
 
