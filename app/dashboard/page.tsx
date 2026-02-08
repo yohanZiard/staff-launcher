@@ -29,7 +29,7 @@ const LINKS: Record<string, string | null> = {
   "MarginLock Management": "https://yohanziard.github.io/management-pricing-calculator/",
   "MarginLock Pricing": "https://yohanziard.github.io/pricing-guide-v3/",
   "Debit Card Uploads": "https://forms.gle/63atJedZ6FUccVHE7",
-  "Accounts Uploads": null,
+  "Accounts Uploads": "https://docs.google.com/forms/d/e/1FAIpQLSfiCiAm0A2LUf1W2KiOGA4zmi2Yslf9EAQU9rgwFstgaTVpuw/viewform",
   "Shipment Docs": null,
 }
 
