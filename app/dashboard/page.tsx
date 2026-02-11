@@ -19,6 +19,7 @@ const STAFF_TOOLS = [
   "Petty Cash Voucher",
   "Fuel Voucher",
   "MarginLock Sales",
+   "Accounts Uploads",
 ]
 
 const LINKS: Record<string, string | null> = {
