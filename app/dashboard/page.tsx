@@ -13,6 +13,7 @@ const ALL_TOOLS = [
   "Debit Card Uploads",
   "Accounts Uploads",
   "Shipment Docs",
+  "MarginLock Discount Calculator – Tinker Tale",
 ]
 
 const STAFF_TOOLS = [
@@ -32,6 +33,7 @@ const LINKS: Record<string, string | null> = {
   "Debit Card Uploads": "https://forms.gle/63atJedZ6FUccVHE7",
   "Accounts Uploads": "https://docs.google.com/forms/d/e/1FAIpQLSfiCiAm0A2LUf1W2KiOGA4zmi2Yslf9EAQU9rgwFstgaTVpuw/viewform",
   "Shipment Docs": null,
+  "MarginLock Discount Calculator – Tinker Tale": "https://yohanziard.github.io/MarginLock-Local-Sales-Calculator---Tinker-Tale/",
 }
 
 export default function DashboardPage() {
@@ -76,7 +78,7 @@ export default function DashboardPage() {
           return (
             <div
               key={tool}
-              onClick={() => url && (window.location.href = url)}
+              onClick={() => url && window.open(url, "_blank")}
               style={{
                 border: "1px solid #ccc",
                 padding: 16,
