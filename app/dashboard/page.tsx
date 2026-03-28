@@ -32,7 +32,7 @@ const LINKS: Record<string, string | null> = {
   "MarginLock Pricing": "https://yohanziard.github.io/pricing-guide-v3/",
   "Debit Card Uploads": "https://forms.gle/63atJedZ6FUccVHE7",
   "Accounts Uploads": "https://docs.google.com/forms/d/e/1FAIpQLSfiCiAm0A2LUf1W2KiOGA4zmi2Yslf9EAQU9rgwFstgaTVpuw/viewform",
-  "Shipment Docs": null,
+  "Shipment Docs": "https://forms.gle/ey8awqw1H57nEvJ2A",
   "MarginLock Discount Calculator – Tinker Tale": "https://yohanziard.github.io/MarginLock-Local-Sales-Calculator---Tinker-Tale/",
 }
 
