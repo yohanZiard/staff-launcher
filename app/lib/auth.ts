@@ -6,4 +6,7 @@ export const USERS = {
   "sales.support@brandsinstyle.com": { role: "staff" },
   "kishovikas629@gmail.com": { role: "staff" },
   "shirazcassim2000@gmail.com": { role: "staff" },
+  "speedwayforwards@gmail.com": { role: "staff" },
+  "amilgurusinghe72@gmail.com": { role: "staff" },
+  
 } as const
