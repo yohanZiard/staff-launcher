@@ -21,6 +21,8 @@ const STAFF_TOOLS = [
   "Fuel Voucher",
   "MarginLock Sales",
    "Accounts Uploads",
+  "Import Document Control - System",
+
 ]
 
 const LINKS: Record<string, string | null> = {
