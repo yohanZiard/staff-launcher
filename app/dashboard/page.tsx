@@ -12,7 +12,7 @@ const ALL_TOOLS = [
   "MarginLock Pricing",
   "Debit Card Uploads",
   "Accounts Uploads",
-  "Shipment Docs",
+  "Import Document Control - System",
   "MarginLock Discount Calculator – Tinker Tale",
 ]
 
@@ -32,7 +32,7 @@ const LINKS: Record<string, string | null> = {
   "MarginLock Pricing": "https://yohanziard.github.io/pricing-guide-v3/",
   "Debit Card Uploads": "https://forms.gle/63atJedZ6FUccVHE7",
   "Accounts Uploads": "https://docs.google.com/forms/d/e/1FAIpQLSfiCiAm0A2LUf1W2KiOGA4zmi2Yslf9EAQU9rgwFstgaTVpuw/viewform",
-  "Shipment Docs": "https://forms.gle/ey8awqw1H57nEvJ2A",
+  "Import Document Control - System": "https://forms.gle/RMfJHTPU8MmqYxQw5",
   "MarginLock Discount Calculator – Tinker Tale": "https://yohanziard.github.io/MarginLock-Local-Sales-Calculator---Tinker-Tale/",
 }
 
