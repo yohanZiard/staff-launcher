@@ -29,7 +29,7 @@ const LINKS: Record<string, string | null> = {
   "Petty Cash Voucher": "https://forms.gle/ZGieoE6Bmq3oCHZX8",
   "Fuel Voucher": "https://forms.gle/VdpVxXaeEV8X4Q317",
   "MarginLock Sales": "https://yohanziard.github.io/sales-price-calculator/",
-  "MarginLock OMS": null,
+  "MarginLock OMS": "https://docs.google.com/spreadsheets/d/163QNeNscmp111PmoZzfHZUl2uVDFNw1xjnxlxL1MqCA/edit?usp=sharing",
   "MarginLock Management": "https://yohanziard.github.io/management-pricing-calculator/",
   "MarginLock Pricing": "https://yohanziard.github.io/pricing-guide-v3/",
   "Debit Card Uploads": "https://forms.gle/63atJedZ6FUccVHE7",
